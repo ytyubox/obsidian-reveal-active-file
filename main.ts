@@ -62,7 +62,7 @@ export default class MyPlugin extends Plugin {
 
 			this.resolve_wait_active_leaf_change()
 			const is_file_explorer_open_now = this.is_file_explorer_open();
-			console.log(`is_file_explorer_open_previously: ${this.is_file_explorer_open_previously}, is_file_explorer_open_now: ${is_file_explorer_open_now}`);
+			console.debug(`is_file_explorer_open_previously: ${this.is_file_explorer_open_previously}, is_file_explorer_open_now: ${is_file_explorer_open_now}`);
 			if(this.is_file_explorer(leaf))
 			{
 				if(is_file_explorer_open_now && ! this.is_file_explorer_open_previously)
